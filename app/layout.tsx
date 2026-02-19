@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import "./globals.css";
-
 export const metadata: Metadata = {
   title: "Mind Lens - 神经社交解码实验室",
   description: "解码社交潜台词的 AI 代理",
