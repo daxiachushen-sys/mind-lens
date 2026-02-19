@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+// 🚀 必须加上下面这一行，否则 Tailwind 样式不会生效！
+import "./globals.css"; 
 
 export const metadata: Metadata = {
   title: "Mind Lens - 神经社交解码实验室",
@@ -12,8 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh">
-      {/* 这里的 style 是为了确保背景是纯黑，且没有多余的边距 */}
-      <body style={{ margin: 0, padding: 0, backgroundColor: '#0a0a0a' }}>
+      {/* 移除了内联 style，交给 globals.css 和 Tailwind 处理 */}
+      <body>
         {children}
       </body>
     </html>
